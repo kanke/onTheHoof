@@ -47,6 +47,14 @@ public class MainActivity extends Activity {
             @Override
         public void onClick(View arg0){
 
+
+                Intent emailIntent = new Intent(Intent.ACTION_SEND);
+                emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"example@llyodsbanking.com"});
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "your subject");
+                emailIntent.putExtra(Intent.EXTRA_TEXT, "message body");
+                emailIntent.setType("message/rfc822");
+                startActivity(Intent.createChooser(emailIntent, "Choose an email provider :"));
+
             }
 
         });
