@@ -19,6 +19,7 @@ public class MainActivity extends Activity {
 
     private Button email;
 
+    private Button callBack;
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
@@ -27,6 +28,7 @@ public class MainActivity extends Activity {
 
         button = (Button) findViewById(R.id.button);
         email= (Button) findViewById(R.id.emailbutton);
+        callBack = (Button) findViewById(R.id.callBack);
 
         // add button listener
         button.setOnClickListener(new View.OnClickListener() {
@@ -54,6 +56,19 @@ public class MainActivity extends Activity {
                 emailIntent.putExtra(Intent.EXTRA_TEXT, "message body");
                 emailIntent.setType("message/rfc822");
                 startActivity(Intent.createChooser(emailIntent, "Choose an email provider :"));
+
+            }
+
+        });
+
+        callBack.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                Log.i("clicks","You Clicked B1");
+                Intent intent = new Intent(MainActivity.this,Main_2.class);
+                startActivity(intent);
+             //   startActivity(intent);
 
             }
 
