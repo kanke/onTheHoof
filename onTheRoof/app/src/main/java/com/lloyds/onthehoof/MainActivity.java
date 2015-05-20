@@ -26,8 +26,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button = (Button) findViewById(R.id.button);
-        email= (Button) findViewById(R.id.emailbutton);
+   //  button = (Button) findViewById(R.id.button);
+      //  email= (Button) findViewById(R.id.emailbutton);
 
         // add button listener
         button.setOnClickListener(new View.OnClickListener() {
