@@ -1,3 +1,4 @@
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -8,7 +9,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Call"
+        android:text="call"
         android:id="@+id/button"
         android:layout_centerVertical="true" />
 
@@ -23,10 +24,19 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Call Back"
+        android:text="CallBack"
         android:id="@+id/callBack"
         android:layout_marginTop="53dp"
-        android:layout_below="@+id/emailbutton"
-        android:layout_alignLeft="@+id/emailbutton"
-        android:layout_alignStart="@+id/emailbutton" />
+        android:layout_below="@+id/callBack"
+        android:layout_alignLeft="@+id/callBack"
+        android:layout_alignStart="@+id/callBack" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chat"
+        android:id="@+id/chatButton"
+        android:layout_alignLeft="@+id/chatButton"
+        android:layout_alignStart="@+id/chatButton" />
+
 </RelativeLayout>

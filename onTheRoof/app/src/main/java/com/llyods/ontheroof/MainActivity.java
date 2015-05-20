@@ -20,6 +20,9 @@ public class MainActivity extends Activity {
     private Button email;
 
     private Button callBack;
+
+    private Button chatButton;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
@@ -27,8 +30,9 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         button = (Button) findViewById(R.id.button);
-        email= (Button) findViewById(R.id.emailbutton);
+        email = (Button) findViewById(R.id.emailbutton);
         callBack = (Button) findViewById(R.id.callBack);
+        chatButton = (Button) findViewById(R.id.chatButton);
 
         // add button listener
         button.setOnClickListener(new View.OnClickListener() {
@@ -47,7 +51,7 @@ public class MainActivity extends Activity {
         email.setOnClickListener(new View.OnClickListener() {
 
             @Override
-        public void onClick(View arg0){
+            public void onClick(View arg0) {
 
 
                 Intent emailIntent = new Intent(Intent.ACTION_SEND);
@@ -65,13 +69,23 @@ public class MainActivity extends Activity {
 
             @Override
             public void onClick(View arg0) {
-                Log.i("clicks","You Clicked B1");
-                Intent intent = new Intent(MainActivity.this,Main_2.class);
+                Log.i("clicks", "You Clicked B1");
+                Intent intent = new Intent(MainActivity.this, Main_2.class);
                 startActivity(intent);
-             //   startActivity(intent);
 
             }
 
+        });
+
+      chatButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                Log.i("clicks", "You Clicked Chat Button");
+               Intent sky = new Intent(Intent.ACTION_VIEW);
+                sky.setData(Uri.parse("https://plus.google.com/hangouts/_/72cpjj252brgi4hhtqn4j68a48?hl=en"));
+              startActivity(sky);
+            }
         });
 
     }
