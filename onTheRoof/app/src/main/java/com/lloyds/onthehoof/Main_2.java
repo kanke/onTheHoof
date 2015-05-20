@@ -1,4 +1,4 @@
-package com.llyods.ontheroof;
+package com.lloyds.onthehoof;
 
 import android.app.Activity;
 import android.os.Bundle;

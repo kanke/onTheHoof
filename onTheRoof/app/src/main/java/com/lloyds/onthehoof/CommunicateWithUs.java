@@ -46,8 +46,8 @@ public class CommunicateWithUs extends Activity {
             public void onClick(View view) {
                 Intent emailIntent = new Intent(Intent.ACTION_SEND);
                 emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"example@llyodsbanking.com"});
-                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "your subject");
-                emailIntent.putExtra(Intent.EXTRA_TEXT, "message body");
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "BACS HelpDesk Query");
+                emailIntent.putExtra(Intent.EXTRA_TEXT, "I will ike to require assistance in sorting out my BACS.Kindly assist.");
                 emailIntent.setType("message/rfc822");
                 startActivity(Intent.createChooser(emailIntent, "Choose an email provider :"));
             }
@@ -67,6 +67,9 @@ public class CommunicateWithUs extends Activity {
             @Override
             public void onClick(View view) {
 
+                Log.i("clicks", "You Clicked B1");
+                Intent intent = new Intent(CommunicateWithUs.this, Main_2.class);
+                startActivity(intent);
             }
         });
     }
