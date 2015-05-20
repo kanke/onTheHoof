@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.llyods.onthehoof.R;
+
 /**
  * Created by kishaku on 19/05/2015.
  */
