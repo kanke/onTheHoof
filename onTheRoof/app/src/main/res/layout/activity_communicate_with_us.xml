@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.lloyds.onthehoof.CommunicateWithUs">
+
+    <TextView
+        android:id="@+id/status_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkgreen"
+        android:textSize="30sp"
+        android:padding="20dp"
+        android:text="@string/status_title"/>
+
+    <TextView
+        android:id="@+id/status_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:padding="15dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/status_message"/>
+
+    <TextView
+        android:id="@+id/contact_method_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkgreen"
+        android:textSize="22sp"
+        android:padding="20dp"
+        android:text="@string/contact_method"/>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/call_us"
+                android:layout_column="0"
+                android:layout_width="170dp"
+                android:layout_height="130dp"
+                android:textColor="@color/darkgreen"
+                android:padding="20dp"
+                android:text="@string/call_us" />
+
+            <Button
+                android:id="@+id/email_us"
+                android:layout_column="1"
+                android:layout_width="170dp"
+                android:layout_height="130dp"
+                android:textColor="@color/darkgreen"
+                android:padding="20dp"
+                android:text="@string/email_us" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/chat_with_us"
+                android:layout_column="0"
+                android:layout_width="170dp"
+                android:layout_height="130dp"
+                android:textColor="@color/darkgreen"
+                android:padding="20dp"
+                android:text="@string/instant_chat" />
+
+            <Button
+                android:id="@+id/we_call_back"
+                android:layout_column="1"
+                android:layout_width="170dp"
+                android:layout_height="130dp"
+                android:textColor="@color/darkgreen"
+                android:padding="20dp"
+                android:text="@string/call_back" />
+
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>

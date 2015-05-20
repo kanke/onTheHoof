@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.lloyds.onthehoof.Registration">
+
+    <TextView
+        android:id="@+id/registration"
+        android:text="@string/registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="40sp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/registration_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:text="@string/registration_details"
+        android:layout_gravity="center_horizontal"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_vertical|right"
+        android:stretchColumns="*" >
+
+
+        <TableRow>
+            <EditText
+                android:id="@+id/customer_number"
+                android:paddingTop="10dp"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/customer_number"
+                android:inputType="text"
+                android:gravity="center">
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/or"
+                android:layout_gravity="center_horizontal"/>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_marginTop="5dp">
+            <EditText
+                android:id="@+id/sort_code"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/sort_code"
+                android:inputType="text"
+                android:gravity="center">
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/and"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/and"
+                android:layout_gravity="center_horizontal"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp">
+            <EditText
+                android:id="@+id/acc_number"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/account_number"
+                android:inputType="text"
+                android:gravity="center">
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/register" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

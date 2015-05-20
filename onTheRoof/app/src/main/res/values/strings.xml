@@ -1,6 +1,42 @@
 <resources>
-    <string name="app_name">onTheRoof</string>
-
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">onTheHoof</string>
     <string name="action_settings">Settings</string>
+    <string name="sort_code"><i>Enter Sort Code</i></string>
+    <string name="account_number"><i>Enter Account Number</i></string>
+    <string name="customer_number"><i>Enter Customer Number</i></string>
+    <string name="register">Register</string>
+    <string name="registration">Registration</string>
+    <string name="registration_details">Please provide either:</string>
+    <string name="enter_verification_code">Enter Code</string>
+    <string name="verify_digit">Enter the 12 Digit</string>
+    <string name="or">OR</string>
+    <string name="and">and</string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="title_activity_services">Services</string>
+
+    /* Services Options */
+    <string name="relationship_team">Relationship Team</string>
+    <string name="client_services">Client Services</string>
+    <string name="card_net">Cardnet</string>
+    <string name="online_helpdesk">Online Helpdesk</string>
+    <string name="bacs">BACS</string>
+    <string name="lex">LEX</string>
+    <string name="gtb">GTB</string>
+    <string name="corp_charge_card">Corp Charge Card</string>
+
+    /* Communication Options */
+    <string name="status_title">Status</string>
+    <string name="status_message">
+        We have no reported problems at present.
+        \nIf you are experiencing any issues please contact us.
+        \n
+    </string>
+    <string name="contact_method">How do you want to Contact Us?</string>
+    /* options to contact the bank */
+    <string name="call_us">Call Us</string>
+    <string name="email_us">E-mail Us</string>
+    <string name="instant_chat">Instant Chat</string>
+    <string name="call_back">Call Back</string>
+    <string name="title_activity_communicate_with_us">CommunicateWithUs</string>
+
 </resources>

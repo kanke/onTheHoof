@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.lloyds.onthehoof.Services">
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/relation_team"
+                android:layout_column="0"
+                android:layout_width="180dp"
+                android:layout_height="130dp"
+                android:textColor="@color/darkgreen"
+                android:padding="20dp"
+                android:text="@string/relationship_team" />
+
+            <Button
+                android:id="@+id/client_services"
+                android:layout_column="1"
+                android:layout_width="180dp"
+                android:layout_height="130dp"
+                android:textColor="@color/darkgreen"
+                android:padding="20dp"
+                android:text="@string/client_services" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/card_net"
+                android:layout_column="0"
+                android:layout_width="180dp"
+                android:layout_height="130dp"
+                android:textColor="@color/darkgreen"
+                android:padding="20dp"
+                android:text="@string/card_net" />
+
+            <Button
+                android:id="@+id/online_helpdesk"
+                android:layout_column="1"
+                android:layout_width="180dp"
+                android:layout_height="130dp"
+                android:textColor="@color/darkgreen"
+                android:padding="20dp"
+                android:text="@string/online_helpdesk" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/BACS"
+                android:layout_column="0"
+                android:layout_width="180dp"
+                android:layout_height="130dp"
+                android:textColor="@color/darkgreen"
+                android:padding="20dp"
+                android:text="@string/bacs" />
+
+            <Button
+                android:id="@+id/LEX"
+                android:layout_column="1"
+                android:layout_width="180dp"
+                android:layout_height="130dp"
+                android:textColor="@color/darkgreen"
+                android:padding="20dp"
+                android:text="@string/lex" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/GTB"
+                android:layout_column="0"
+                android:layout_width="180dp"
+                android:layout_height="130dp"
+                android:textColor="@color/darkgreen"
+                android:padding="20dp"
+                android:text="@string/gtb" />
+
+            <Button
+                android:id="@+id/corp_charge_card"
+                android:layout_column="1"
+                android:layout_width="180dp"
+                android:layout_height="130dp"
+                android:textColor="@color/darkgreen"
+                android:padding="20dp"
+                android:text="@string/corp_charge_card" />
+
+        </TableRow>
+
+
+    </TableLayout>
+</LinearLayout>
